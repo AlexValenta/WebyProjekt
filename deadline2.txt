@@ -1,0 +1,78 @@
+Databáze	
+1) Produkty (products)
+Pole	Typ	Popis
+id	INT (PK)	Primární klíč
+name	VARCHAR(100)	Název produktu
+description	TEXT	Detailní popis
+price	DECIMAL(10,2)	Cena (Kč)
+stock	INT	Skladové množství
+category_id	INT (FK)	Reference na categories.id
+image	VARCHAR(255)	Cesta k obrázku
+product_type	ENUM('supplement','speciality')	Typ (doplněk/specialita)
+created_at	DATETIME	Datum přidání
+
+2) Kategorie (categories)
+Pole	Typ	Popis
+id	INT (PK)	Primární klíč
+name	VARCHAR(50)	Název kategorie (např. "Proteiny", "Moravské speciality")
+description	TEXT	Popis kategorie
+Myšlenky projektu:	
+Popis projektu: MoravskeDoplnky.zdenekhrdina.cz
+1. Název projektu
+Moravské Doplňky – Unikátní e-shop s fitness doplňky a moravskými specialitami
+
+2. Cíl projektu
+Vytvořit zábavný a funkční e-shop, který kombinuje prodej klasických sportovních doplňků (proteiny, kreatiny, gainery) s netradičními "moravskými vychytávkami" jako Slivovicový Nakopávač, Pivové piko, Pikové pivo, Proteinové cigarety a Kratomový čípek.
+
+Cílem je nabídnout humor, originalitu a zároveň kvalitní produkty pro fitness nadšence i milovníky moravského folkloru.
+
+3. Cílová skupina
+Fitness nadšenci hledající kvalitní doplňky stravy
+
+Lidé, kteří oceňují humor a netradiční produkty
+
+Fanoušci moravské kultury a "domácích" receptur
+
+Experimentátoři hledající originální dárky
+
+4. Produkty
+A) Klasické doplňky stravy
+Proteiny (syrovátkové, veganské, hovězí)
+
+Kreatiny (monohydrát, HCl)
+
+Gainery (vysokokalorické směsi)
+
+Amino kyseliny & BCAA
+
+Pre-workouty
+
+B) Moravské speciality
+Slivovicový Nakopávač – Předtréninkový energetický nápoj s "moravskou pálenkou" (bez alkoholu?)
+
+Pivové piko – Pivo s příchutí české oblíbené pochoutky
+
+Proteinové cigarety – Nízkosacharidová svačina na energii a koncentraci
+
+Kratomové čípky – Výborný produkt pro rychlé uklidnění a regeneraci.
+
+Haluškový gainer – Vysoko-sacharidový nápoj s příchutí brynzových halušek
+
+5. Funkce e-shopu
+Přehledný katalog produktů s filtrací (kategorie: "Fitness" vs. "Moravské speciality")
+
+Detail produktu s vtipným popisem a reálnými benefity
+
+Košík a platební brána (krypto platby jako "moravské groše"?)
+
+6. Design & Branding
+Vzhled: Kombinace moderního fitness designu s moravskými lidovými motivy
+
+Logo: Svalnatý valach držící činku a lahvi slivovice
+
+Limited edice – Např. "Kofola pre-workout" nebo "Výprodej kratomových čípků po Vánocích"
+
+8. Technické provedení
+Doména: MoravskeDoplnky.zdenekhrdina.cz
+
+Platforma: CodeIgniter4 + hosting
